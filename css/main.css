@@ -1,0 +1,132 @@
+html, body
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  font-family: Tahoma, Arial, Verdana, sans-serif;
+  background-color: gray;
+  margin-bottom: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(gray), to(#ccc));
+  background: -moz-linear-gradient(top,  gray,  #ccc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#cccccc');
+}
+
+.container
+{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.section
+{
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  behavior: url(border-radius.htc);
+  text-align: left;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  margin: 20px 0;
+  padding-top: 0px;
+  overflow: hidden;
+}
+
+.two-column
+{
+  float: left;
+  width: 45%;
+  margin-left: 2%;
+}
+
+.single-column
+{
+  clear: both;
+  width: 95%;
+  margin-left: 2%;
+}
+
+.section h2
+{
+  background-color: #333333;
+  color: white;
+  position: relative;
+  padding: 5px;
+  padding-left: 20px;
+  margin: 0;
+  margin-right: -20px;
+  left: -10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  behavior: url(border-radius.htc);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#333));
+  background: -moz-linear-gradient(top,  black,  #333);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#333333');
+  text-shadow: 2px 2px 2px #666;
+}
+
+.section p
+{
+  color: gray;
+  font-size: 90%;
+}
+
+.section ol
+{
+  color: #333333;
+  font-size: 90%;
+}
+
+.section ul
+{
+  color: #333333;
+  font-size: 90%;
+  list-style-type: square;
+}
+
+a,
+a:link
+{
+  color: #333333;
+}
+
+a:visited
+{
+  color: #555555;
+}
+
+a:hover
+{
+  color: #777777;
+  text-decoration: none;
+}
+
+pre
+{
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  display: block;
+  padding: 10px 0px;
+}
+
+/* taken from: http://users.tkk.fi/tkarvine/pre-wrap-css3-mozilla-opera-ie.html */
+/* Copyright 2004-09-12 Tero Karvinen www.iki.fi/karvinen. GNU Free Documentation License */
+/* Browser specific (not valid) styles to make preformatted text wrap */
+pre { 
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
