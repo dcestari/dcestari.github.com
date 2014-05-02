@@ -28,7 +28,7 @@ Esta dirección se conoce como *URL* (e.g. http://google.com) y le permite al na
 
 Tomemos como ejemplo el *URL* **http://twitter.com/blog** para analizar las partes más importantes:
 
-- **Protocol** va al inicio, generalmente será **http** o **https**, en este ejemplo es `http`.
+- **Protocolo** va al inicio, generalmente será **http** o **https**, en este ejemplo es `http`.
 
 - **Dominio** luego del protocolo y el separador **://** encontraremos el dominio, en este ejemplo es `twitter.com`.
 
