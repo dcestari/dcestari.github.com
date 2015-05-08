@@ -1,0 +1,11 @@
+<h2>More Posts...</h2>
+
+<ul class="list-unstyled">
+  {% for other_post in site.posts %}
+    {% unless other_post == post %}
+      <li class="media-list">
+        <h4><a href="{{ other_post.url }}">{{ other_post.title }}</a> - <small>{{ other_post.date | date_to_string }}</small></h4>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>

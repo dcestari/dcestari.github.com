@@ -1,0 +1,106 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eee;
+}
+
+.page-header {
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    a {
+      color: black;
+      text-decoration: none;
+      padding-left:  5px;
+      padding-right: 5px;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+}
+
+header {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  [data-toggle='collapse'] {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      display: none;
+      margin-bottom: 0;
+    }
+
+    .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #888;
+    }
+
+    .icon-bar + .icon-bar {
+      margin-top: 4px;
+    }
+  }
+}
+
+#sidebar-collapse {
+  @media (min-width: 768px) {
+    display: block !important;
+  }
+}
+
+.sidebar {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  section {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+
+    &:first-child {
+      h2 {
+        margin-top: 0;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .recent-posts {
+    p {
+      color: #777;
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid white;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: #777;
+  font-size: 0.7em;
+}
+
+.about {
+  font-size: 0.9em;
+
+  p {
+    color: #777;
+  }
+}

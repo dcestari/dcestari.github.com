@@ -1,78 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="Yv1aC-yKIhpnfgjgnRjmhooTrUwmJSYI3t4MJUDkdiU" />
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <title>Daniel Cestari</title>
-  </head>
-  <body>
-    <div class="container">
+---
+layout: default
+title:  Daniel Cestari
+---
 
-      <div class="row">
-        <div class="jumbotron">
-          <h1>Daniel Cestari</h1>
-          <p>developer / sysadmin / "architect"</p>
-        </div> <!-- jumbotron -->
+{% assign post = site.posts.first %}
 
-        <h2>About me</h2>
-        <p>
-          I'm a <emph>Computer Engineer</emph>, from the <a href="http://www.usb.ve">Universidad Simón Bolívar</a> in
-          <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=venezuela&amp;sll=37.0625,-95.677068&amp;sspn=37.871902,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Venezuela&amp;t=h&amp;z=6">Venezuela</a>.
-        </p>
-        <p>
-          I work as a <strong>Software Developer</strong> but I also play the role of <strong>System Administrator</strong>
-          from time to time.
-        </p>
-        <p>
-          I have been a <emph>web developer</emph> for many years now, but there is more to me than the web. I like almost
-          all of the software development related areas from computer science.
-        </p>
-      </div> <!-- row -->
+<div class="post">
+  <h2>{{ post.title }} - <small>{{ post.date | date_to_string }}</small></h2>
 
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Online Life</h2>
-          <ul>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="http://twitter.com/dcestari">twitter.com/dcestari</a></li>
-            <li><a href="http://github.com/dcestari">github.com/dcestari</a></li>
-          </ul>
-        </div> <!-- col-md-4 -->
-
-        <div class="col-md-4">
-          <h2>Projects</h2>
-          <ul>
-            <li><a href="http://dcestari.github.com/yate">Yate</a></li>
-            <li><a href="http://github.com/dcestari/markshi">Markshi</a></li>
-            <li><a href="http://dcestari.github.com/git-external">Git External</a></li>
-            <li><a href="http://github.com/dcestari/capistrano-git-external">Capistrano Git External</a></li>
-          </ul>
-        </div> <!-- col-md-4 -->
-
-        <div class="col-md-4">
-          <h2>Things I Like</h2>
-          <ul>
-            <li><a href="http://www.haiku-os.org">Haiku</a></li>
-            <li><a href="http://railscasts.com">Railscasts</a></li>
-            <li><a href="http://redcareditor.com">Redcar</a></li>
-            <li><a href="http://propel.posterous.com">Propel Blog</a></li>
-          </ul>
-        </div> <!-- col-md-4 -->
-      </div> <!-- row -->
-
-      <hr />
-
-      <footer>
-        <p>&copy; Daniel Cestari 2014</p>
-      </footer>
-
-    </div> <!-- container -->
-
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  </body>
-</html>
-
+  {{ post.content }}
+</div>

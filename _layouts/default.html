@@ -1,29 +1,57 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <title>Daniel Cestari - {{ page.title }}</title>
+    <meta name="google-site-verification" content="Yv1aC-yKIhpnfgjgnRjmhooTrUwmJSYI3t4MJUDkdiU" />
+    <link rel="stylesheet" href="/css/application.css">
+    <title>{{ page.title }}</title>
   </head>
   <body>
+
     <div class="container">
-      <div class="page-header">
-        <h1>Daniel Cestari <small>developer / sysadmin / "architect"</small></h1>
+
+      <header>
+        <div class="page-header">
+          <h1><a href="/">Daniel Cestari</a> <small>web and mobile developer / sysadmin</small></h1>
+        </div>
+
+        <button type="button" class="btn-link collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+          <span class="sr-only">Toggle sidebar</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+      </header>
+
+      <div class="row">
+        <div class="col-sm-3 col-sm-push-9 sidebar">
+          <div class="collapse" id="sidebar-collapse">
+            {% include sidebar.html %}
+          </div>
+        </div>
+
+        <div class="col-sm-9 col-sm-pull-3">
+
+          {{ content }}
+
+          {% include moreposts.html %}
+
+          <footer>
+            <p>&copy; Daniel Cestari 2015</p>
+          </footer>
+
+        </div>
+
       </div>
-
-      {{ content }}
-
-      <hr />
-
-      <footer>
-        <p>&copy; Daniel Cestari 2014</p>
-      </footer>
 
     </div> <!-- container -->
 
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+    <script src="/js/application.js"></script>
   </body>
 </html>
+
