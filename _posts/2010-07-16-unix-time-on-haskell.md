@@ -14,10 +14,12 @@ working on the _IO Monad_.
 
 From the _time_ package we can get a _POSIXTime_ and then use _floor_ to get an _Integral_:
 
-    import Data.Time.Clock.POSIX
-    
-    main :: IO ()
-    main = print . floor =&lt;&lt; getPOSIXTime
+{% highlight haskell %}
+import Data.Time.Clock.POSIX
+
+main :: IO ()
+main = print . floor =<< getPOSIXTime
+{% endhighlight %}
 
 Which will print a nice integer as would `perl -e 'print time'` (not as short but
 **it get's the job done**)
