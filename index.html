@@ -9,4 +9,6 @@ title:  Daniel Cestari
   <h2>{{ post.title }} - <small>{{ post.date | date_to_string }}</small></h2>
 
   {{ post.content }}
+
+  {% include comments.html title=post.title url=post.url %}
 </div>
