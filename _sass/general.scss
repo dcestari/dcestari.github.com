@@ -104,3 +104,22 @@ footer {
     color: #777;
   }
 }
+
+figure {
+  margin: 1.5em 0;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+
+  @media (min-width: 768px) {
+    margin: 1.5em 10%;
+  }
+
+  figcaption {
+    color: #333;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: 0.8em;
+  }
+}
