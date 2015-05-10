@@ -23,6 +23,8 @@ Recently, more and more companies are offering their services for a **pay as you
 
 These services vary in _what_ they offer and _how_ they do it, but, overall, they can be classified in:
 
+- **SaaS** or _Software as a Service_ are those services that provide a software running "somewhere in the cloud" and which you don't even have to deploy. _Gmail_, _Dropbox_, _Google Docs_ and many other services we use every day are _SaaS_.
+
 - **PaaS** or _Platform as a Service_ are those services that provide a platform where you can run an application without worrying about server setups and maintenance. A good example of this is _Heroku_, where you can simply deploy an application and not worry about _where_ it runs, or _how_ the servers are setup.
 
 - **IaaS** or _Infrastructure as a Service_ are those services that provide a hardware infrastructure where you can install and configure software applications. A great example of this are _Google Compute Engine_, _Amazon's EC2_, among others.
@@ -76,13 +78,13 @@ The first thing we need to do when launching an _EC2 Instance_ is choosing an _A
 
 To begin with, we will choose the latest (at the time of this writing) _Ubuntu Server LTS_ distribution (_LTS_ stands for _Long Term Support_, a special version that will receive updates for many years) which is _Ubuntu 14.04 LTS_.
 
-{% include figure.html index=6 src="/assets/Screen Shot 2015-05-02 at 8.22.03 PM.png" caption="Choose AMI" %}
+{% include figure.html index=6 src="/assets/Screen Shot 2015-05-02 at 8.22.03 PM.png" caption="Choose an AMI" %}
 
 The second step is to choose the instance type, each type has a different amount of available _RAM_, _CPU_ usage limits (what they call _vCPUs_), _Network Performance_ and other details (http://aws.amazon.com/ec2/instance-types).
 
 We have to choose one that fits our needs but, for this guide, we will choose the smallest one. This is specially useful for playing with the _EC2 Instances_ since it is elegible for the _Free Tier_ (https://aws.amazon.com/free) which allows us to use a **t2.micro** instance for free for our first year.
 
-{% include figure.html index=7 src="/assets/Screen Shot 2015-05-02 at 8.54.43 PM.png" caption="Choose and Instance Type" %}
+{% include figure.html index=7 src="/assets/Screen Shot 2015-05-02 at 8.54.43 PM.png" caption="Choose an Instance Type" %}
 
 From this, we can either launch the instance with the default configuration or follow the subsequent steps to customize things like:
 
